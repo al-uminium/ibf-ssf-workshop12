@@ -1,0 +1,10 @@
+img {
+  width: 20rem;
+  height: auto;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 4fr));
+  grid-gap: 10px;
+}

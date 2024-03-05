@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card Generator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>How many numbers do you want to generate?</h1>
+    <div class="input-container">
+      <form action="randomcards" th:action="@{/randomcards}" th:object="${randomcards}" method="post">
+        <input type="number" th:field="*{number}" min="1" max="30" name="generate">
+        <input type="submit" value="Generate" name="generate">
+      </form>
+    </div>
+  </div>
+</body>
+</html>
